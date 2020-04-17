@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from 'emotion';
+import Logo from './Logo';
 
 function FollowerContainer(props) {
   return (
@@ -10,9 +11,7 @@ function FollowerContainer(props) {
       // margin-top: 0.5rem;
       // margin-bottom: 1rem;
     `}>
-      <img className={css`
-        color: var(--facebook);
-      `} src={props.icon} alt="Facebook Icon" width="30"></img>
+      <Logo data={props.data} />
       <p className={css`
         margin-left: 10px;
       `}>@matt_blah</p>

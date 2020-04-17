@@ -11,12 +11,12 @@ function Delta(props) {
       props.data.followers_change > 0 || props.data.subscribers_change > 0
       ?
       <div className={css`color: var(--lime-green);`}>
-        <img src={IconUp} />
+        <img src={IconUp} alt="up arrow"/>
         <span>{props.data.followers_change || props.data.subscribers_change} Today</span>
       </div>
       :
       <div className={css`color: var(--bright-red);`}>
-        <img src={IconDown} />
+        <img src={IconDown} alt="down arrow"/>
         <span>{Math.abs(props.data.followers_change || props.data.subscribers_change)} Today</span>
       </div>
       
