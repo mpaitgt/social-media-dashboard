@@ -8,6 +8,9 @@ function PageLikes() {
     <div className={css`
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      align-self; center;
     `}>
       <h4>Page Views</h4>
       <img src={InstagramIcon} alt="instagram icon"></img>

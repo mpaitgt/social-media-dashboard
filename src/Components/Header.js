@@ -3,15 +3,15 @@ import { css } from 'emotion';
 import Toggle from './Toggle';
 
 
-function Header() {
+function Header(props) {
   return (
     <div className={css`
       display: flex; 
       flex-direction: row; 
       align-items: center; 
       justify-content: space-between;
-      margin-top: 3rem;
-      margin-bottom: 3rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     `}> 
       <div>
       <h1 className={css`
@@ -22,7 +22,7 @@ function Header() {
         color: var(--dark-theme-sec-txt);
       `}>Total Followers: 23,004</h4>
       </div>
-      <Toggle />
+      <Toggle toggleView={props.toggleView}/>
     </div>
   )
 }

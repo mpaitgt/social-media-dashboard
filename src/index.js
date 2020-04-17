@@ -6,9 +6,7 @@ import { Container } from 'react-grid-system';
 
 ReactDOM.render(
   // <React.StrictMode>
-  <Container>
-    <App />
-  </Container>,
+    <App />,
   // </React.StrictMode>,
   document.getElementById('root')
 );

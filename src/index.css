@@ -5,6 +5,8 @@
   --dark-theme-btn: linear-gradient(180deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --dark-theme-card-bg: hsl(228, 28%, 20%);
 
+  --light-theme-bg: hsl(0, 0%, 100%);
+  --light-theme-txt: hsl(228, 12%, 44%);
   --light-theme-btn: hsl(230, 22%, 74%);
 
   --lime-green: hsl(163, 72%, 41%);
@@ -22,8 +24,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  background: var(--dark-theme-bg);
-  color: var(--dark-theme-txt);
+  /* background: var(--dark-theme-bg); */
+  /* color: var(--dark-theme-txt); */
 }
 
 code {

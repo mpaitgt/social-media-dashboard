@@ -11,7 +11,7 @@ function OverviewCard() {
       height: 120px;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 10px 0px;
       display: flex;
       flex-direction: column;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'emotion';
 
-function Toggle() {
+function Toggle(props) {
   return (
     <div className={css`
       width: 80px;
@@ -9,7 +9,7 @@ function Toggle() {
       background: var(--dark-theme-btn);
       border-radius: 50px;
       border: 2px solid var(--dark-theme-btn);
-    `}>
+    `} onClick={props.toggleView}>
       <div className={css`
         width: 50%;
         height: 100%;

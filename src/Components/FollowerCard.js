@@ -10,7 +10,7 @@ function FollowerCard() {
       background: var(--dark-theme-card-bg);
       width: 100%;
       height: 200px;
-      border-radius: 10px;
+      border-radius: 5px;
       padding: 10px 0px;
       display: flex;
       flex-direction: column;
