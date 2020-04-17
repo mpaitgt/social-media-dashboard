@@ -24,9 +24,9 @@ function App() {
     `}>
       <Container>
         <Header toggleView={toggleView}/>
-        <FollowerContainer />
+        <FollowerContainer darkMode={darkMode} />
         <Overview />
-        <OverviewContainer />
+        <OverviewContainer darkMode={darkMode} />
       </Container>
     </div>
   );
