@@ -5,12 +5,11 @@ function Card(props) {
   return (
     <div className={css`
       background: ${props.darkMode ? 'var(--dark-theme-card-bg)' : 'var(--light-theme-card-bg)'};
-      height: 120px;
+      // height: 120px;
       margin-top: 1rem;
       margin-bottom: 1rem;
-      min-height: 100px;
       border-radius: 5px;
-      padding: 20px 10px;
+      padding: 20px 0px;
       display: flex;
       flex-direction: column;
       align-item: center;

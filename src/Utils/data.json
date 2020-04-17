@@ -5,6 +5,7 @@
       "followers": 1987,
       "likes": 400,
       "page_views": 52,
+      "followers_change": 24,
       "key": 1
     },
     {
@@ -12,6 +13,7 @@
       "followers": 1044,
       "likes": 507,
       "retweets": 117,
+      "followers_change": -96,
       "key": 2
     },
     {
@@ -19,13 +21,15 @@
       "followers": 11000,
       "likes": 107,
       "page_views": 52000,
+      "followers_change": 214,
       "key": 3
     },
     {
       "channel": "YouTube",
       "subscribers": 8239,
-      "likes": 107,
+      "likes": 97,
       "page_views": 1407,
+      "subscribers_change": -71,
       "key": 4
     }
   ]

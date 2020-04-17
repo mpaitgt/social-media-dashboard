@@ -1,8 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-grid-system';
 import { css } from 'emotion';
-import FollowerCard from './FollowerCard';
-import FacebookIcon from '../images/icon-facebook.svg';
 
 function FollowerContainer(props) {
   return (
@@ -10,6 +7,8 @@ function FollowerContainer(props) {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      // margin-top: 0.5rem;
+      // margin-bottom: 1rem;
     `}>
       <img className={css`
         color: var(--facebook);

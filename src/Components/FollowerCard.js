@@ -1,5 +1,4 @@
 import React from 'react';
-import { css } from 'emotion';
 import IconLockUp from './IconLockUp';
 import FollowerLockUp from './FollowerLockUp';
 import Delta from './Delta';
@@ -30,7 +29,7 @@ function FollowerCard(props) {
     <Card darkMode={props.darkMode}>
       <IconLockUp icon={iconDisplay()} />
       <FollowerLockUp data={props.data} />
-      <Delta font_size="14px"/>
+      <Delta data={props.data} font_size="14px"/>
     </Card>
   )
 }

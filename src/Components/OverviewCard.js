@@ -1,6 +1,5 @@
 import React from 'react';
 import { css } from 'emotion';
-import PageLikes from './PageLikes';
 import Card from './Card';
 import InstagramIcon from '../images/icon-instagram.svg';
 import FacebookIcon from '../images/icon-facebook.svg';
@@ -37,7 +36,7 @@ function OverviewCard(props) {
         <h4>Likes</h4>
         <img src={iconDisplay()} alt="instagram icon"></img>
         <div className={css`font-size: 38px;`}>{props.data.likes}</div>
-        <Delta font_size="10px"/>
+        <Delta data={props.data} font_size="10px"/>
       </div>
     </Card>
   )

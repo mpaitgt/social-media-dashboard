@@ -1,7 +1,5 @@
 import React from 'react';
 import { css } from 'emotion';
-import IconUp from '../images/icon-up.svg';
-import IconDown from '../images/icon-down.svg';
 
 function Overview() {
   return (

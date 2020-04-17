@@ -2,15 +2,17 @@ import React from 'react';
 import { css } from 'emotion';
 
 function FollowerLockUp(props) {
-  console.log(props.data);
+
   return (
     <div className={css`
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
     `}>
       <div className={css`
-        font-size: 72px;
+        font-size: 62px;
         letter-spacing: -4px;
       `}>{props.data.followers || props.data.subscribers}</div>
       <div className={css`
@@ -18,7 +20,7 @@ function FollowerLockUp(props) {
         letter-spacing: 3px;
         color: var(--dark-theme-sec-txt);
       `}>
-        Followers
+        {props.data.followers ? 'Followers' : 'Subscribers'}
       </div>
     </div>
   )
