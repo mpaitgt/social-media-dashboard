@@ -1,7 +1,8 @@
 import React from 'react';
 import { css } from 'emotion';
 
-function FollowerLockUp() {
+function FollowerLockUp(props) {
+  console.log(props.data);
   return (
     <div className={css`
       display: flex;
@@ -11,7 +12,7 @@ function FollowerLockUp() {
       <div className={css`
         font-size: 72px;
         letter-spacing: -4px;
-      `}>1122</div>
+      `}>{props.data.followers || props.data.subscribers}</div>
       <div className={css`
         text-transform: uppercase;
         letter-spacing: 3px;

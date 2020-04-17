@@ -4,7 +4,7 @@ import { css } from 'emotion';
 import FollowerCard from './FollowerCard';
 import FacebookIcon from '../images/icon-facebook.svg';
 
-function FollowerContainer() {
+function FollowerContainer(props) {
   return (
     <div className={css`
       display: flex;
@@ -13,7 +13,7 @@ function FollowerContainer() {
     `}>
       <img className={css`
         color: var(--facebook);
-      `} src={FacebookIcon} alt="Facebook Icon" width="30"></img>
+      `} src={props.icon} alt="Facebook Icon" width="30"></img>
       <p className={css`
         margin-left: 10px;
       `}>@matt_blah</p>
