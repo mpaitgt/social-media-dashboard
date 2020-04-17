@@ -1,28 +1,26 @@
 import React from 'react';
 import { css } from 'emotion';
-import IconLockUp from './IconLockUp';
-import FollowerLockUp from './FollowerLockUp';
-import Delta from './Delta';
+import PageLikes from './PageLikes';
 
-function FollowerCard() {
+function OverviewCard() {
   return (
+
     <div className={css`
       background: var(--dark-theme-card-bg);
       width: 100%;
-      height: 200px;
+      height: 120px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       border-radius: 10px;
       padding: 10px 0px;
       display: flex;
       flex-direction: column;
       align-item: center;
       justify-content: space-around;
-      border-top: 5px solid var(--instagram) !important;
     `}>
-      <IconLockUp />
-      <FollowerLockUp />
-      <Delta font_size="14px"/>
+      <PageLikes />
     </div>
   )
-}
+}   
 
-export default FollowerCard;
+export default OverviewCard;
