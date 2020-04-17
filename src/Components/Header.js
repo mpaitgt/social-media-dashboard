@@ -22,7 +22,7 @@ function Header(props) {
         color: var(--dark-theme-sec-txt);
       `}>Total Followers: 23,004</h4>
       </div>
-      <Toggle toggleView={props.toggleView}/>
+      <Toggle darkMode={props.darkMode} toggleView={props.toggleView}/>
     </div>
   )
 }

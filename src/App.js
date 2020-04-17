@@ -23,7 +23,7 @@ function App() {
       color: ${darkMode ? 'var(--dark-theme-txt)' : 'var(--light-theme-txt)'};
     `}>
       <Container>
-        <Header toggleView={toggleView}/>
+        <Header darkMode={darkMode} toggleView={toggleView}/>
         <FollowerContainer darkMode={darkMode} />
         <Overview />
         <OverviewContainer darkMode={darkMode} />
