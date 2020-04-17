@@ -6,6 +6,7 @@
       "likes": 400,
       "page_views": 52,
       "followers_change": 24,
+      "percentage_change": 3,
       "key": 1
     },
     {
@@ -14,6 +15,7 @@
       "likes": 507,
       "retweets": 117,
       "followers_change": -96,
+      "percentage_change": 2,
       "key": 2
     },
     {
@@ -22,6 +24,7 @@
       "likes": 107,
       "page_views": 52000,
       "followers_change": 214,
+      "percentage_change": -7,
       "key": 3
     },
     {
@@ -30,6 +33,7 @@
       "likes": 97,
       "page_views": 1407,
       "subscribers_change": -71,
+      "percentage_change": -11,
       "key": 4
     }
   ]

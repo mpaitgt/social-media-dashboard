@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from 'emotion';
 import Card from './Card';
 import Logo from './Logo';
-import Delta from './Delta';
+import { PercentageDelta } from './Delta';
 
 function OverviewCard(props) {
 
@@ -15,10 +15,10 @@ function OverviewCard(props) {
         justify-content: center;
         align-self; center;
       `}>
-        <h4>Likes</h4>
+        <h4 className={css`color: var(--dark-theme-sec-txt);`}>{props.data.type}</h4>
         <Logo data={props.data} />
-        <div className={css`font-size: 38px;`}>{props.data.likes}</div>
-        <Delta data={props.data} font_size="10px"/>
+        <div className={css`font-size: 38px; letter-spacing: -2px;`}>{props.data.value}</div>
+        <PercentageDelta data={props.data} font_size="14px"/>
       </div>
     </Card>
   )

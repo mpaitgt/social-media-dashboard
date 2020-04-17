@@ -8,13 +8,10 @@ function FollowerContainer(props) {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      // margin-top: 0.5rem;
-      // margin-bottom: 1rem;
+      align-items: center;
     `}>
       <Logo data={props.data} />
-      <p className={css`
-        margin-left: 10px;
-      `}>@matt_blah</p>
+      <p className={css`margin-left: 10px;`}>@matt_blah</p>
     </div>
   )
 }
