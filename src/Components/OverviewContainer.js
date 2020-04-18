@@ -2,6 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-grid-system';
 import OverviewCard from './OverviewCard';
 import Data from '../Utils/data.json';
+import { css } from 'emotion';
 
 function OverviewContainer(props) {
 
@@ -33,7 +34,7 @@ function OverviewContainer(props) {
   }
 
   return (
-    <Row >
+    <Row className={css`margin-bottom: 8rem;`}>
       {
         reOrganize().map(data => {
           return (
