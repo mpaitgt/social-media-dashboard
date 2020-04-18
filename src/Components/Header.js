@@ -2,6 +2,7 @@ import React from 'react';
 import { css } from 'emotion';
 import Toggle from './Toggle';
 import Data from '../Utils/data.json';
+import helpers from '../Utils/helpers';
 
 function Header(props) {
   const data = Data['social_media'];
@@ -31,7 +32,7 @@ function Header(props) {
         `}>Social Media Dashboard</h1>
         <h4 className={css`
           color: var(--dark-theme-sec-txt);
-        `}>Total Followers: {totalFollowers()}</h4>
+        `}>Total Followers: {helpers.addTheK(totalFollowers())}</h4>
       </div>
       <Toggle darkMode={props.darkMode} toggleView={props.toggleView}/>
     </div>

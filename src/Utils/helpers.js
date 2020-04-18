@@ -6,6 +6,6 @@ export default {
       ? Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1)) + 'k'
       : Math.sign(num) * Math.abs(num);
     }
-    return num;
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
   }
 }
