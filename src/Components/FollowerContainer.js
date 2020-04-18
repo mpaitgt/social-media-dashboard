@@ -5,12 +5,14 @@ import FollowerCard from './FollowerCard';
 import Data from '../Utils/data.json';
 
 function FollowerContainer(props) {
+
+
   return (
     <Row className={css`margin-top: 1rem;`}>
       {
         Data['social_media'].map(data => {
           return (
-            <Col md={3} key={data.key}>
+            <Col lg={3} md={6} sm={6} xs={12} key={data.key}>
               <FollowerCard data={data} darkMode={props.darkMode} />
             </Col>
           )

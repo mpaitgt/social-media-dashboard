@@ -7,24 +7,22 @@ function OverviewContainer(props) {
 
   const reOrganize = () => {
     let data = Data['social_media'];
+    let key = Math.random() * 20;
     return data.reduce((acc, currentItem, index, array) => {
       const { channel, likes, page_views, retweets } = currentItem;
-      console.log(array[index])
-      if (retweets) acc.push({ 'type': 'Retweets', 'value': retweets, 'channel': channel });
-      if (likes) acc.push({ 'type': 'Likes', 'value': likes, 'channel': channel });
-      if (page_views) acc.push({ 'type': 'Page Views', 'value': page_views, 'channel': channel });
+      if (retweets) acc.push({ 'type': 'Retweets', 'value': retweets, 'channel': channel, 'key': key++ });
+      if (likes) acc.push({ 'type': 'Likes', 'value': likes, 'channel': channel, 'key': key++ });
+      if (page_views) acc.push({ 'type': 'Page Views', 'value': page_views, 'channel': channel, 'key': key++ });
       return acc;
     }, []);
   }
 
-  console.log(reOrganize());
-
   return (
-    <Row>
+    <Row >
       {
         reOrganize().map(data => {
           return (
-            <Col md={3} key={data.key}>
+            <Col lg={3} md={6} sm={6} xs={12} key={data.key}>
               <OverviewCard data={data} darkMode={props.darkMode} />
             </Col>
           )

@@ -1,5 +1,6 @@
 import React from 'react';
 import { css } from 'emotion';
+import helpers from '../Utils/helpers';
 
 function FollowerLockUp(props) {
 
@@ -14,7 +15,7 @@ function FollowerLockUp(props) {
       <div className={css`
         font-size: 62px;
         letter-spacing: -4px;
-      `}>{props.data.followers || props.data.subscribers}</div>
+      `}>{helpers.addTheK(props.data.followers || props.data.subscribers)}</div>
       <div className={css`
         text-transform: uppercase;
         letter-spacing: 3px;

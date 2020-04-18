@@ -3,6 +3,7 @@ import { css } from 'emotion';
 import Card from './Card';
 import Logo from './Logo';
 import { PercentageDelta } from './Delta';
+import helpers from '../Utils/helpers';
 
 function OverviewCard(props) {
 
@@ -15,9 +16,20 @@ function OverviewCard(props) {
         justify-content: center;
         align-self; center;
       `}>
-        <h4 className={css`color: var(--dark-theme-sec-txt);`}>{props.data.type}</h4>
+        <h4 className={css`
+          color: var(--dark-theme-sec-txt);
+          padding-bottom: 20px;
+        `}>
+          {props.data.type}
+        </h4>
+        
         <Logo data={props.data} />
-        <div className={css`font-size: 38px; letter-spacing: -2px;`}>{props.data.value}</div>
+        <div className={css`
+          font-size: 38px; 
+          letter-spacing: -2px;
+        `}>
+          {helpers.addTheK(props.data.value)}
+        </div>
         <PercentageDelta data={props.data} font_size="14px"/>
       </div>
     </Card>
