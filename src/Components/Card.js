@@ -15,6 +15,7 @@ function Card(props) {
       flex-direction: column;
       align-item: center;
       justify-content: space-around;
+      position: relative;
     `}>
       { props.children }
     </div>

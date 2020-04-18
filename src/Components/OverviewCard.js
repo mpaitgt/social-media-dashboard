@@ -12,25 +12,30 @@ function OverviewCard(props) {
       <div className={css`
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        align-self; center;
       `}>
-        <h4 className={css`
-          color: var(--dark-theme-sec-txt);
-          padding-bottom: 20px;
-        `}>
-          {props.data.type}
-        </h4>
-        
-        <Logo data={props.data} />
-        <div className={css`
-          font-size: 38px; 
-          letter-spacing: -2px;
-        `}>
-          {helpers.addTheK(props.data.value)}
+        <div className={css`display: flex; flex-direction: column;`}>
+          <h4 className={css`
+            color: var(--dark-theme-sec-txt);
+            padding-bottom: 20px;
+          `}>
+            {props.data.type}
+          </h4>
+          <span className={css`
+            font-size: 38px; 
+            letter-spacing: -2px;
+          `}>
+            {helpers.addTheK(props.data.value)}
+          </span>
         </div>
-        <PercentageDelta data={props.data} font_size="14px"/>
+        <div className={css`
+          display: flex; 
+          flex-direction: column; 
+          align-items: flex-end;  
+          justify-content: space-between;
+        `}>
+          <Logo data={props.data} />
+          <PercentageDelta data={props.data} font_size="14px" />
+        </div>
       </div>
     </Card>
   )

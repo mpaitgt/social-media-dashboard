@@ -52,13 +52,14 @@ export function PercentageDelta(props) {
   }
 
   return (
-    <div className={css`
+    <span className={css`
       letter-spacing: 2px;
       align-self: center;
       font-weight: 700;
-      font-size: ${props.font_size}
+      font-size: ${props.font_size};
+      align-self: flex-end;
     `}>
       {change()}
-    </div>
+    </span>
   )
 }
