@@ -9,10 +9,25 @@ function OverviewContainer(props) {
     let data = Data['social_media'];
     let key = Math.random() * 20;
     return data.reduce((acc, currentItem, index, array) => {
-      const { channel, likes, page_views, retweets } = currentItem;
-      if (retweets) acc.push({ 'type': 'Retweets', 'value': retweets, 'channel': channel, 'key': key++ });
-      if (likes) acc.push({ 'type': 'Likes', 'value': likes, 'channel': channel, 'key': key++ });
-      if (page_views) acc.push({ 'type': 'Page Views', 'value': page_views, 'channel': channel, 'key': key++ });
+      const { channel, likes, page_views, retweets, likes_change, page_views_change, retweets_change } = currentItem;
+      if (retweets) acc.push({ 
+        'type': 'Retweets', 
+        'value': retweets, 
+        'channel': channel, 
+        'percentage_change': retweets_change,
+        'key': key++ });
+      if (likes) acc.push({ 
+        'type': 'Likes', 
+        'value': likes, 
+        'channel': channel,
+        'percentage_change': likes_change, 
+        'key': key++ });
+      if (page_views) acc.push({ 
+        'type': 'Page Views', 
+        'value': page_views, 
+        'channel': channel, 
+        'percentage_change': page_views_change,
+        'key': key++ });
       return acc;
     }, []);
   }
