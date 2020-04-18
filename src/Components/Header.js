@@ -26,9 +26,9 @@ function Header(props) {
     `}> 
       <div>
         <h1 className={css`
-          color: var(--dark-theme-txt);
+          color: ${props.darkMode ? 'var(--dark-theme-txt)' : 'var(--light-theme-txt-darker)'};
           font-weight: 900;
-          padding: 20px 0px;
+          padding: 10px 0px;
         `}>Social Media Dashboard</h1>
         <h4 className={css`
           color: var(--dark-theme-sec-txt);

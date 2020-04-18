@@ -8,7 +8,7 @@ function Overview() {
       align-self: center;
       font-weight: 700;
       margin-top: 2rem;
-      margin-bottom: 2rem;
+      color: var(--dark-theme-sec-txt);
     `}>
       <h2>Overview - Today</h2>
     </div>

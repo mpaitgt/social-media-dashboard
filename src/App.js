@@ -20,7 +20,7 @@ function App() {
   return (
     <div className={css`
       background: ${darkMode ? 'var(--dark-theme-bg)' : 'var(--light-theme-bg)'};
-      color: ${darkMode ? 'var(--dark-theme-txt)' : 'var(--light-theme-txt)'};
+      color: ${darkMode ? 'var(--dark-theme-txt)' : 'var(--light-theme-txt-darker)'};
     `}>
       <Container>
         <Header darkMode={darkMode} toggleView={toggleView}/>

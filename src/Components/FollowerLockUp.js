@@ -15,6 +15,7 @@ function FollowerLockUp(props) {
       <div className={css`
         font-size: 62px;
         letter-spacing: -4px;
+        margin-bottom: 1rem;
       `}>{helpers.addTheK(props.data.followers || props.data.subscribers)}</div>
       <div className={css`
         text-transform: uppercase;
