@@ -4,11 +4,13 @@
   --dark-theme-sec-txt: hsl(228, 34%, 66%);
   --dark-theme-btn: linear-gradient(180deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
   --dark-theme-card-bg: hsl(228, 28%, 20%);
+  --dark-theme-card-bg-hover: hsl(229, 27%, 28%);
 
   --light-theme-bg: hsl(0, 0%, 100%);
   --light-theme-txt: hsl(228, 12%, 44%);
   --light-theme-txt-darker: hsl(230, 17%, 14%);
   --light-theme-card-bg: hsl(227, 47%, 96%);
+  --light-theme-card-bg-hover: hsl(229, 34%, 88%);
   --light-theme-btn: hsl(230, 22%, 74%);
 
   --lime-green: hsl(163, 72%, 41%);

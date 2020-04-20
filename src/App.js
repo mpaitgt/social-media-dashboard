@@ -5,6 +5,7 @@ import FollowerContainer from './Components/FollowerContainer';
 import Overview from './Components/Overview';
 import OverviewContainer from './Components/OverviewContainer';
 import { Container } from 'react-grid-system';
+import helpers from './Utils/helpers';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -16,6 +17,15 @@ function App() {
       setDarkMode(true);
     }
   };
+
+  const getThis = () => {
+    helpers.getInstagram()
+      .then(res => console.log(res))
+      // .then(data => console.log(data))
+      .catch(err => console.log(err));
+  }
+
+  getThis();
 
   return (
     <div className={css`

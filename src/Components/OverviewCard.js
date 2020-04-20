@@ -13,7 +13,12 @@ function OverviewCard(props) {
         display: grid;
         grid-template-columns: 1fr 1fr;
       `}>
-        <div className={css`display: flex; flex-direction: column;`}>
+        <div className={css`
+          display: flex; 
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+        `}>
           <h4 className={css`
             color: var(--dark-theme-sec-txt);
             padding-bottom: 20px;
