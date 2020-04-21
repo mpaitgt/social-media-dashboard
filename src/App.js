@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import FollowerContainer from './Components/FollowerContainer';
 import Overview from './Components/Overview';
 import OverviewContainer from './Components/OverviewContainer';
+import Footer from './Components/Footer';
 import { Container } from 'react-grid-system';
 import helpers from './Utils/helpers';
 
@@ -37,6 +38,7 @@ function App() {
         <FollowerContainer darkMode={darkMode} />
         <Overview />
         <OverviewContainer darkMode={darkMode} />
+        <Footer />
       </Container>
     </div>
   );

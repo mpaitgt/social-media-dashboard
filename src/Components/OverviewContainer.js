@@ -34,7 +34,7 @@ function OverviewContainer(props) {
   }
 
   return (
-    <Row className={css`margin-bottom: 8rem;`}>
+    <Row>
       {
         reOrganize().map(data => {
           return (
