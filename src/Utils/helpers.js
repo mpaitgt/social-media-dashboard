@@ -8,7 +8,4 @@ export default {
     }
     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
   },
-  getInstagram: () => {
-    return fetch('graph.facebook.com/769456320249941/insights');
-  }
 }

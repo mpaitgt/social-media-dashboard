@@ -8,7 +8,7 @@ import helpers from '../Utils/helpers';
 function OverviewCard(props) {
 
   return (
-    <Card darkMode={props.darkMode}>
+    <Card data={props.data} darkMode={props.darkMode}>
       <div className={css`
         display: grid;
         grid-template-columns: 1fr 1fr;

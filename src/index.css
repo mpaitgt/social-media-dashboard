@@ -18,6 +18,7 @@
   --facebook: hsl(195, 100%, 50%);
   --twitter: hsl(203, 89%, 53%);
   --instagram: linear-gradient(180deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --instagram-border: hsl(37, 97%, 70%);
   --youtube: hsl(348, 97%, 39%);
   margin: 0;
   padding: 0;

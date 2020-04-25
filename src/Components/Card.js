@@ -3,6 +3,21 @@ import { css } from 'emotion';
 
 function Card(props) {
 
+  const border = () => {
+    switch(props.data.channel) {
+      case 'Facebook':
+        return 'var(--facebook)';
+      case 'Twitter':
+        return 'var(--twitter)';
+      case 'YouTube':
+        return 'var(--youtube)';
+      case 'Instagram':
+        return 'var(--instagram-border)';
+      default:
+        return 'var(--facebook)';
+    }
+  }
+
   return (
     <div className={css`
       background: ${props.darkMode ? 'var(--dark-theme-card-bg)' : 'var(--light-theme-card-bg)'};
@@ -16,6 +31,7 @@ function Card(props) {
       align-item: center;
       justify-content: space-around;
       position: relative;
+      border-top: ${props.border ? `5px solid ${border()}` : null};
       &:hover {
         cursor: pointer;
         background: ${props.darkMode ? 'var(--dark-theme-card-bg-hover)' : 'var(--light-theme-card-bg-hover)'};
